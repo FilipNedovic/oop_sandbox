@@ -54,9 +54,9 @@ class Bicycle
         $this->weight_kg = floatval($value);
     }
 
-    public function weight_lbs($value)
+    public function weight_lbs()
     {
-        $weight_lbs = floatval($this->weight_kg) = floatval($value) * 2.2046226218;
+        $weight_lbs = floatval($this->weight_kg) * 2.2046226218;
         return number_format($weight_lbs, 2) . " lbs";
     }
 
